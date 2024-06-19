@@ -85,7 +85,7 @@ if __name__ == "__main__":
             writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
             writer.writeheader()
 
-    for lst in split_list(two_letter_combos, 6)[2:]:
+    for lst in split_list(two_letter_combos, 6):
         process_combos(lst)
     
     end_time = time.time()
